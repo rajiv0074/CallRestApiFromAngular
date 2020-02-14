@@ -1,0 +1,19 @@
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th>User ID</th>
+            <th>ID</th>
+            <th>Title</th>
+            <th>Completion Flag</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let responseObject of callApiResponseObject">
+            <td>{{responseObject.userId}}</td>
+            <td>{{responseObject.id}}</td>
+            <td>{{responseObject.title}}</td>
+            <td>{{responseObject.completed}}</td>
+        </tr>
+
+    </tbody>
+</table>
